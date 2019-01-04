@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "reset": "yarn start --reset-cache",
-    "test": "jest"
+    "react-devtools": "react-devtools",
+    "start": "react-native start",
+    "reset": "react-native start --reset-cache",
+    "test": "jest",
+    "android": "react-native run-android",
+    "androidr": "react-native run-android --variant=release",
+    "ios": "react-native run-ios --simulator='iPhone XR'"
   },
   "dependencies": {
     "react": "16.6.3",
